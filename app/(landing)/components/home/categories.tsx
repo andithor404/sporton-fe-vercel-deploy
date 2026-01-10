@@ -35,7 +35,7 @@ const CategoriesSection = () => {
     /* Untuk mengatur tulisan kategori diatas card*/
   }
   return (
-    <section id="category-section" className="container mx-auto px-24 pb-20">
+    <section id="category-section" className="container mx-auto px-24 pb-20 ">
       <div className="flex justify-between">
         <h2 className="font-bold text-2xl">Browse By Categories</h2>
         <Link href={"#"} className="flex gap-2 text-primary font-medium">

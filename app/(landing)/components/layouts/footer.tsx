@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark-alternate text-white mt-52">
+    <footer className="bg-dark-alternate text-white">
       {/* -------------------------------------------------------------------------*/}
       {/* CONTAINER 1*/}
       {/* -------------------------------------------------------------------------*/}
