@@ -3,7 +3,7 @@ type CardWithHeaderProps = {
   children: React.ReactNode;
 };
 
-const CardWithHeader = ({ title, children }) => {
+const CardWithHeader = ({ title, children }: CardWithHeaderProps) => {
   return (
     <div className="bg-white">
       <div className="px-5 py-4 border-b border-gray-200">
