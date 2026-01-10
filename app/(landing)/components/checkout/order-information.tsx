@@ -25,11 +25,10 @@ const OrderInformation = () => {
         <div className="input-group">
           <label htmlFor="shipping_address">Shipping Address</label>
           <textarea
-            className="resize-none"
-            type="text"
             placeholder="Type your shipping address"
             id="shipping_address"
             rows={7}
+            className="resize-none"
           ></textarea>
         </div>
       </div>
