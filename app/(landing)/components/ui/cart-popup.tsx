@@ -60,22 +60,26 @@ const CartPopup = () => {
           Your Shopping Cart is Empty
         </div>
       )}
-      <div className="border-t border-gray-200 p-4">
-        <div className="flex justify-between font-semibold ">
-          <div className="text-sm">Total</div>
-          <div className="text-primary text-xs">
-            {priceFormatter(totalPrice)}
+      {items.length < 1 ? (
+        <></>
+      ) : (
+        <div className="border-t border-gray-200 p-4">
+          <div className="flex justify-between font-semibold ">
+            <div className="text-sm">Total</div>
+            <div className="text-primary text-xs">
+              {priceFormatter(totalPrice)}
+            </div>
           </div>
+          <Button
+            variant="dark"
+            size="small"
+            className="w-full mt-4"
+            onClick={handleCheckout}
+          >
+            Checkout Now <FiArrowRight />
+          </Button>
         </div>
-        <Button
-          variant="dark"
-          size="small"
-          className="w-full mt-4"
-          onClick={handleCheckout}
-        >
-          Checkout Now <FiArrowRight />
-        </Button>
-      </div>
+      )}
     </div>
   );
 };
